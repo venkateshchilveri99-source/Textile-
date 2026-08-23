@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>BR. Kurapati | Solapur Chaddars</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:"DM Sans",Arial,sans-serif;
+    background:#faf7f1;
+    color:#292521;
+    line-height:1.6;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+header{
+    position:sticky;
+    top:0;
+    z-index:10;
+    background:#faf7f1;
+    border-bottom:1px solid #e5ddd2;
+}
+
+.nav{
+    max-width:1100px;
+    margin:auto;
+    padding:15px 20px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo{
+    font-family:"Playfair Display",serif;
+    font-size:25px;
+    font-weight:bold;
+    color:#173d35;
+}
+
+.logo span{
+    display:block;
+    font-family:Arial,sans-serif;
+    font-size:9px;
+    letter-spacing:2px;
+    color:#a36d3f;
+}
+
+nav{
+    display:flex;
+    gap:22px;
+}
+
+nav a{
+    font-size:14px;
+    font-weight:bold;
+    color:#173d35;
+}
+
+nav a:hover{
+    color:#a36d3f;
+}
+
+/* HERO */
+
+.hero{
+    max-width:1100px;
+    margin:auto;
+    padding:75px 20px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+}
+
+.small-title{
+    color:#a36d3f;
+    font-size:12px;
+    font-weight:bold;
+    letter-spacing:2px;
+    margin-bottom:15px;
+}
+
+h1,h2{
+    font-family:"Playfair Display",serif;
+    color:#173d35;
+}
+
+h1{
+    font-size:clamp(40px,6vw,75px);
+    line-height:1.1;
+}
+
+.hero p{
+    margin:22px 0;
+    color:#655e57;
+    max-width:600px;
+}
+
+.buttons{
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 20px;
+    border-radius:7px;
+    font-weight:bold;
+    font-size:14px;
+}
+
+.btn-main{
+    background:#173d35;
+    color:white;
+}
+
+.btn-light{
+    border:1px solid #d4c7b8;
+    background:white;
+    color:#173d35;
+}
+
+.hero-img{
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 15px 40px #0002;
+}
+
+.hero-img img{
+    width:100%;
+    height:450px;
+    object-fit:cover;
+}
+
+/* SECTIONS */
+
+section{
+    scroll-margin-top:80px;
+}
+
+.section{
+    max-width:1100px;
+    margin:auto;
+    padding:70px 20px;
+}
+
+.soft{
+    background:#f0e9df;
+}
+
+.section-title{
+    max-width:650px;
+    margin-bottom:30px;
+}
+
+h2{
+    font-size:40px;
+}
+
+.section-title p{
+    margin-top:12px;
+    color:#6b645c;
+}
+
+/* CARDS */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:18px;
+}
+
+.card{
+    background:white;
+    border:1px solid #e5ddd2;
+    padding:25px;
+    border-radius:14px;
+}
+
+.card h3{
+    color:#173d35;
+    margin-bottom:8px;
+}
+
+.card p{
+    color:#6b645c;
+    font-size:14px;
+}
+
+/* GALLERY */
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:18px;
+}
+
+.gallery img{
+    width:100%;
+    height:330px;
+    object-fit:cover;
+    border-radius:14px;
+    box-shadow:0 8px 25px #0001;
+    transition:.3s;
+}
+
+.gallery img:hover{
+    transform:scale(1.02);
+}
+
+.gallery .wide{
+    grid-column:span 2;
+}
+
+.gallery .wide img{
+    height:450px;
+}
+
+/* CONTACT */
+
+.contact{
+    background:#173d35;
+    color:white;
+    border-radius:18px;
+    padding:40px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:35px;
+}
+
+.contact h2{
+    color:white;
+}
+
+.contact p{
+    color:#d7e4df;
+    margin-top:12px;
+}
+
+.contact-info{
+    display:grid;
+    gap:12px;
+}
+
+.contact-item{
+    background:#ffffff12;
+    padding:14px;
+    border-radius:8px;
+}
+
+.contact-item small{
+    display:block;
+    color:#b9ccc6;
+    font-size:10px;
+    letter-spacing:1px;
+    margin-bottom:3px;
+}
+
+footer{
+    text-align:center;
+    padding:25px;
+    font-size:13px;
+    color:#777;
+    border-top:1px solid #e3dbd1;
+}
+
+/* MOBILE */
+
+@media(max-width:800px){
+
+    .hero{
+        grid-template-columns:1fr;
+        padding-top:45px;
+    }
+
+    .hero-img{
+        order:-1;
+    }
+
+    .hero-img img{
+        height:350px;
+    }
+
+    .cards{
+        grid-template-columns:1fr;
+    }
+
+    .contact{
+        grid-template-columns:1fr;
+        padding:28px 20px;
+    }
+}
+
+@media(max-width:550px){
+
+    .nav{
+        align-items:flex-start;
+    }
+
+    nav{
+        gap:12px;
+        flex-wrap:wrap;
+        justify-content:flex-end;
+    }
+
+    nav a{
+        font-size:12px;
+    }
+
+    h1{
+        font-size:43px;
+    }
+
+    h2{
+        font-size:32px;
+    }
+
+    .gallery{
+        grid-template-columns:1fr;
+    }
+
+    .gallery .wide{
+        grid-column:span 1;
+    }
+
+    .gallery img,
+    .gallery .wide img{
+        height:300px;
+    }
+
+    .section{
+        padding:55px 17px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+    <div class="nav">
+
+        <a href="#home" class="logo">
+            BR. Kurapati
+            <span>SOLAPUR CHADDARS</span>
+        </a>
+
+        <nav>
+            <a href="#info">Info</a>
+            <a href="#images">Images</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+    </div>
+</header>
+
+
+<!-- HOME -->
+
+<section id="home">
+
+<div class="hero">
+
+    <div>
+
+        <div class="small-title">
+            SINCE 1995 · SOLAPUR, MAHARASHTRA
+        </div>
+
+        <h1>
+            Pure Cotton<br>
+            Solapur Chaddars.
+        </h1>
+
+        <p>
+            We are <b>BR. Kurapati</b>, manufacturers of famous
+            Solapur Chaddars. We specialize in beautiful traditional
+            designs, comfortable cotton and top-quality Solapur
+            Chaddars.
+        </p>
+
+        <div class="buttons">
+
+            <a href="#images" class="btn btn-main">
+                View Collection
+            </a>
+
+            <a href="tel:9890556524" class="btn btn-light">
+                Call Us
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="hero-img">
+
+        <!-- HERO IMAGE -->
+
+        <img src="1000052466.jpg"
+             alt="Mayur Pankh Solapur Chaddar Showcase">
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- INFORMATION -->
+
+<section id="info" class="soft">
+
+<div class="section">
+
+    <div class="section-title">
+
+        <div class="small-title">
+            ABOUT OUR CRAFT
+        </div>
+
+        <h2>
+            Made in Solapur, made with care.
+        </h2>
+
+        <p>
+            BR. Kurapati has been manufacturing Solapur Chaddars
+            (Mayur Pankh) since 1995. Our collection combines
+            traditional Solapur textile patterns, attractive colours
+            and pure cotton comfort.
+        </p>
+
+    </div>
+
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Pure Cotton</h3>
+            <p>
+                Comfortable pure cotton Solapur Chaddars designed
+                for everyday use and lasting comfort.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Solapur Heritage</h3>
+            <p>
+                Traditional Solapur designs with distinctive woven
+                patterns and beautiful colour combinations.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Since 1995</h3>
+            <p>
+                Decades of manufacturing experience from
+                New Pacha Peth, Solapur.
+            </p>
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- IMAGES -->
+
+<section id="images">
+
+<div class="section">
+
+    <div class="section-title">
+
+        <div class="small-title">
+            OUR COLLECTION
+        </div>
+
+        <h2>
+            Colours, patterns & tradition.
+        </h2>
+
+        <p>
+            Explore our Solapur Chaddar designs and traditional
+            textile patterns.
+        </p>
+
+    </div>
+
+
+    <div class="gallery">
+
+        <!-- IMAGE 1: Wide Collection Layout -->
+        <div class="wide">
+            <img src="1000052445.jpg"
+                 alt="Solapur Chaddars Multi-Color Variety">
+        </div>
+
+        <!-- IMAGE 2: Peacock Pattern Detail -->
+        <div>
+            <img src="1000052446.jpg"
+                 alt="Mayur Peacock Pattern Solapur Chaddar">
+        </div>
+
+        <!-- IMAGE 3: Paired Traditional Blankets -->
+        <div>
+            <img src="1000052444.jpg"
+                 alt="Geometric and Peacock Solapur Chaddars">
+        </div>
+
+        <!-- IMAGE 4: Folded Display -->
+        <div class="wide">
+            <img src="1000052466.jpg"
+                 alt="Mayur Solapur Chaddar Display">
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section id="contact" class="soft">
+
+<div class="section">
+
+    <div class="contact">
+
+        <div>
+
+            <div class="small-title" style="color:#d9ad7c;">
+                GET IN TOUCH
+            </div>
+
+            <h2>
+                Bring Solapur tradition home.
+            </h2>
+
+            <p>
+                For enquiries, product information and orders,
+                contact BR. Kurapati.
+            </p>
+
+        </div>
+
+
+        <div class="contact-info">
+
+            <a href="tel:9890556524" class="contact-item">
+                <small>CALL</small>
+                9890556524
+            </a>
+
+            <a href="https://wa.me/919890553597"
+               target="_blank"
+               class="contact-item">
+
+                <small>WHATSAPP</small>
+                9890553597
+
+            </a>
+
+            <a href="mailto:sagar.kurapati5@gmail.com"
+               class="contact-item">
+
+                <small>EMAIL</small>
+                sagar.kurapati5@gmail.com
+
+            </a>
+
+            <div class="contact-item">
+
+                <small>ADDRESS</small>
+
+                New Pacha Peth, Solapur,
+                Maharashtra
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<footer>
+
+    © 2026 BR. Kurapati · Pure Cotton Solapur Chaddars · Solapur, Maharashtra
+
+</footer>
+
+</body>
+</html>
