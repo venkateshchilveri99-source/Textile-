@@ -142,13 +142,20 @@ h1{
 .hero-img{
     border-radius:18px;
     overflow:hidden;
-    box-shadow:0 15px 40px #0002;
+    box-shadow:0 15px 40px rgba(0,0,0,0.12);
+    background:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
 }
 
 .hero-img img{
     width:100%;
-    height:450px;
-    object-fit:cover;
+    height:auto;
+    max-height:480px;
+    object-fit:contain;
+    display:block;
+    image-rendering:-webkit-optimize-contrast;
 }
 
 /* SECTIONS */
@@ -211,16 +218,19 @@ h2{
 .gallery{
     display:grid;
     grid-template-columns:repeat(2,1fr);
-    gap:18px;
+    gap:20px;
 }
 
 .gallery img{
     width:100%;
-    height:330px;
+    height:auto;
+    aspect-ratio:4 / 3;
     object-fit:cover;
     border-radius:14px;
-    box-shadow:0 8px 25px #0001;
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
     transition:.3s;
+    display:block;
+    image-rendering:-webkit-optimize-contrast;
 }
 
 .gallery img:hover{
@@ -232,7 +242,9 @@ h2{
 }
 
 .gallery .wide img{
-    height:450px;
+    height:auto;
+    aspect-ratio:16 / 9;
+    object-fit:cover;
 }
 
 /* CONTACT */
@@ -297,7 +309,7 @@ footer{
     }
 
     .hero-img img{
-        height:350px;
+        max-height:350px;
     }
 
     .cards{
@@ -344,7 +356,7 @@ footer{
 
     .gallery img,
     .gallery .wide img{
-        height:300px;
+        aspect-ratio:4 / 3;
     }
 
     .section{
@@ -419,8 +431,8 @@ footer{
 
         <!-- HERO IMAGE -->
 
-        <img src="1000052466.jpg"
-             alt="Mayur Pankh Solapur Chaddar Showcase">
+        <img src="https://i.ibb.co/Kjb4WrDR/1000052466.jpg"
+             alt="Mayur Pankh Solapur Chaddar">
 
     </div>
 
@@ -514,27 +526,27 @@ footer{
 
     <div class="gallery">
 
-        <!-- IMAGE 1: Wide Collection Layout -->
+        <!-- IMAGE 1: Multi-pattern Chaddars -->
         <div class="wide">
-            <img src="1000052445.jpg"
+            <img src="https://i.ibb.co/3yBr0kHn/1000052445.jpg"
                  alt="Solapur Chaddars Multi-Color Variety">
         </div>
 
-        <!-- IMAGE 2: Peacock Pattern Detail -->
+        <!-- IMAGE 2: Peacock Pattern Single Chaddar -->
         <div>
-            <img src="1000052446.jpg"
+            <img src="https://i.ibb.co/rKWYh3jh/1000052446.jpg"
                  alt="Mayur Peacock Pattern Solapur Chaddar">
         </div>
 
-        <!-- IMAGE 3: Paired Traditional Blankets -->
+        <!-- IMAGE 3: Geometric & Peacock Duo -->
         <div>
-            <img src="1000052444.jpg"
+            <img src="https://i.ibb.co/zhJvjr4y/1000052444.jpg"
                  alt="Geometric and Peacock Solapur Chaddars">
         </div>
 
-        <!-- IMAGE 4: Folded Display -->
+        <!-- IMAGE 4: Folded Mayur Chaddar Display -->
         <div class="wide">
-            <img src="1000052466.jpg"
+            <img src="https://i.ibb.co/Kjb4WrDR/1000052466.jpg"
                  alt="Mayur Solapur Chaddar Display">
         </div>
 
