@@ -287,6 +287,22 @@ h2{
     margin-bottom:3px;
 }
 
+/* MAP CONTAINER */
+.map-container{
+    margin-top:20px;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+    border:1px solid #ffffff22;
+}
+
+.map-container iframe{
+    width:100%;
+    height:230px;
+    border:0;
+    display:block;
+}
+
 footer{
     text-align:center;
     padding:25px;
@@ -544,8 +560,6 @@ footer{
                  alt="Geometric and Peacock Solapur Chaddars">
         </div>
 
-        
-
     </div>
 
 </div>
@@ -576,6 +590,16 @@ footer{
                 contact BR. Kurapati.
             </p>
 
+            <!-- LIVE EMBEDDED MAP -->
+            <div class="map-container">
+                <iframe 
+                    title="BR Kurapati Location Map"
+                    src="https://maps.google.com/maps?q=Masan%20Kirana,%20New%20Pacha%20Peth,%20Solapur,%20Maharashtra&t=&z=17&ie=UTF8&iwloc=A&output=embed" 
+                    loading="lazy" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+
         </div>
 
 
@@ -603,14 +627,13 @@ footer{
 
             </a>
 
-            <div class="contact-item">
+            <a href="https://maps.google.com/?q=Masan+Kirana,+New+Pacha+Peth,+Solapur,+Maharashtra" target="_blank" class="contact-item">
 
-                <small>ADDRESS</small>
+                <small>ADDRESS (CLICK FOR DIRECTIONS)</small>
 
-                New Pacha Peth, Solapur,
-                Maharashtra
+                New Pacha Peth, Solapur, Maharashtra
 
-            </div>
+            </a>
 
         </div>
 
