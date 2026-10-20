@@ -1,673 +1,860 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#173d35">
+<meta name="description" content="BR. Kurapati — traditional Solapur Chaddars and Mayur Pankh designs, proudly associated with Solapur, Maharashtra.">
+<title>BR. Kurapati | Heritage Solapur Chaddars</title>
 
-<title>BR. Kurapati | Solapur Chaddars</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+:root {
+  --green: #173d35;
+  --green-dark: #102c26;
+  --gold: #a36d3f;
+  --cream: #faf7f1;
+  --cream-dark: #f0e9df;
+  --ink: #292521;
+  --muted: #6b645c;
+  --line: #e5ddd2;
+  --white: #ffffff;
+  --whatsapp: #25d366;
 }
 
-html{
-    scroll-behavior:smooth;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    font-family:"DM Sans",Arial,sans-serif;
-    background:#faf7f1;
-    color:#292521;
-    line-height:1.6;
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 20px;
 }
 
-a{
-    text-decoration:none;
-    color:inherit;
+body {
+  font-family: "DM Sans", Arial, sans-serif;
+  background: var(--cream);
+  color: var(--ink);
+  line-height: 1.65;
 }
 
-/* HEADER - STATIC */
-header{
-    position:relative;
-    background:#faf7f1;
-    border-bottom:1px solid #e5ddd2;
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
-.nav{
-    max-width:1100px;
-    margin:auto;
-    padding:15px 20px;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
+img {
+  max-width: 100%;
 }
 
-.logo{
-    font-family:"Playfair Display",serif;
-    font-size:25px;
-    font-weight:bold;
-    color:#173d35;
+.container {
+  width: min(1100px, calc(100% - 40px));
+  margin-inline: auto;
 }
 
-.logo span{
-    display:block;
-    font-family:Arial,sans-serif;
-    font-size:9px;
-    letter-spacing:2px;
-    color:#a36d3f;
+header {
+  background: var(--cream);
+  border-bottom: 1px solid var(--line);
 }
 
-nav{
-    display:flex;
-    gap:22px;
-    align-items:center;
+.nav {
+  min-height: 78px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
 }
 
-nav a{
-    font-size:14px;
-    font-weight:bold;
-    color:#173d35;
+.logo {
+  font-family: "Playfair Display", serif;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--green);
+  white-space: nowrap;
 }
 
-nav a:hover{
-    color:#a36d3f;
+.logo span {
+  display: block;
+  font-family: "DM Sans", sans-serif;
+  font-size: 9px;
+  letter-spacing: 2px;
+  color: var(--gold);
+  margin-top: 5px;
 }
 
-/* HERO */
-
-.hero{
-    max-width:1100px;
-    margin:auto;
-    padding:60px 20px;
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:50px;
-    align-items:center;
+nav {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  flex-wrap: wrap;
 }
 
-.small-title{
-    color:#a36d3f;
-    font-size:12px;
-    font-weight:bold;
-    letter-spacing:2px;
-    margin-bottom:15px;
+nav a {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--green);
 }
 
-h1,h2,h3{
-    font-family:"Playfair Display",serif;
-    color:#173d35;
+nav a:hover {
+  color: var(--gold);
 }
 
-h1{
-    font-size:clamp(36px,5vw,65px);
-    line-height:1.15;
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+  padding: 58px 0 66px;
 }
 
-.hero p{
-    margin:20px 0;
-    color:#655e57;
-    max-width:600px;
+.eyebrow {
+  color: var(--gold);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
 }
 
-.buttons{
-    display:flex;
-    gap:12px;
-    flex-wrap:wrap;
+h1, h2, h3 {
+  font-family: "Playfair Display", Georgia, serif;
+  color: var(--green);
+  line-height: 1.2;
 }
 
-.btn{
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
-    gap:8px;
-    padding:12px 22px;
-    border-radius:7px;
-    font-weight:bold;
-    font-size:14px;
-    transition: 0.2s ease;
+h1 {
+  font-size: clamp(38px, 5vw, 62px);
+  letter-spacing: -1px;
 }
 
-.btn-main{
-    background:#173d35;
-    color:white;
+.hero-copy > p {
+  color: var(--muted);
+  margin: 20px 0 24px;
+  max-width: 530px;
 }
 
-.btn-main:hover{
-    background:#102c26;
+.hero-image {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px #00000012;
 }
 
-.btn-whatsapp{
-    background:#25D366;
-    color:white;
+.hero-image img {
+  display: block;
+  width: 100%;
+  height: 440px;
+  object-fit: cover;
+  object-position: center;
 }
 
-.btn-whatsapp:hover{
-    background:#1ebd5b;
+.buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
 }
 
-.btn-light{
-    border:1px solid #d4c7b8;
-    background:white;
-    color:#173d35;
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 19px;
+  border-radius: 7px;
+  font-size: 13px;
+  font-weight: 700;
+  transition: background .2s, transform .2s;
+  border: 0;
+  cursor: pointer;
 }
 
-.hero-img{
-    border-radius:18px;
-    overflow:hidden;
-    box-shadow:0 15px 40px rgba(0,0,0,0.12);
-    background:#fff;
-    display:flex;
-    align-items:center;
-    justify-content:center;
+.btn:hover {
+  transform: translateY(-1px);
 }
 
-.hero-img img{
-    width:100%;
-    height:auto;
-    max-height:480px;
-    object-fit:contain;
-    display:block;
+.btn-green {
+  background: var(--green);
+  color: var(--white);
 }
 
-/* SECTIONS */
-
-.section{
-    max-width:1100px;
-    margin:auto;
-    padding:70px 20px;
+.btn-green:hover {
+  background: var(--green-dark);
 }
 
-.soft{
-    background:#f0e9df;
+.btn-whatsapp {
+  background: var(--whatsapp);
+  color: #073d1c;
 }
 
-.section-title{
-    max-width:650px;
-    margin-bottom:30px;
+.btn-whatsapp:hover {
+  background: #1fbd5c;
 }
 
-h2{
-    font-size:36px;
+.btn-light {
+  background: var(--white);
+  border: 1px solid #d4c7b8;
+  color: var(--green);
 }
 
-.section-title p{
-    margin-top:10px;
-    color:#6b645c;
+.section {
+  padding: 68px 0;
 }
 
-/* CARDS */
-
-.cards{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:18px;
+.soft {
+  background: var(--cream-dark);
 }
 
-.card{
-    background:white;
-    border:1px solid #e5ddd2;
-    padding:22px;
-    border-radius:14px;
+.section-heading {
+  max-width: 670px;
+  margin-bottom: 30px;
 }
 
-.card h3{
-    color:#173d35;
-    font-size:18px;
-    margin-bottom:8px;
+h2 {
+  font-size: clamp(30px, 4vw, 39px);
 }
 
-.card p{
-    color:#6b645c;
-    font-size:13px;
+.section-heading p {
+  margin-top: 10px;
+  color: var(--muted);
 }
 
-/* PRODUCT CATALOG */
-
-.product-grid{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:25px;
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
 }
 
-.product-card{
-    background:white;
-    border-radius:14px;
-    overflow:hidden;
-    border:1px solid #e5ddd2;
-    display:flex;
-    flex-direction:column;
-    box-shadow:0 6px 18px rgba(0,0,0,0.04);
+.info-card {
+  background: var(--white);
+  border: 1px solid var(--line);
+  padding: 24px;
+  border-radius: 13px;
 }
 
-.product-card img{
-    width:100%;
-    aspect-ratio:4/3;
-    object-fit:cover;
-    display:block;
+.info-card h3 {
+  font-size: 19px;
+  margin-bottom: 9px;
 }
 
-.product-details{
-    padding:20px;
-    display:flex;
-    flex-direction:column;
-    flex-grow:1;
-    justify-content:space-between;
+.info-card p {
+  color: var(--muted);
+  font-size: 13px;
 }
 
-.product-details h3{
-    font-size:20px;
-    margin-bottom:6px;
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
 }
 
-.product-details p{
-    font-size:13px;
-    color:#6b645c;
-    margin-bottom:15px;
+.product-card {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 6px 18px #00000008;
 }
 
-/* SPECS TABLE */
-
-.specs-container{
-    background:white;
-    border-radius:14px;
-    border:1px solid #e5ddd2;
-    overflow:hidden;
-    margin-top:30px;
+.product-card img {
+  display: block;
+  width: 100%;
+  height: 285px;
+  object-fit: cover;
+  background: #eee;
 }
 
-.specs-table{
-    width:100%;
-    border-collapse:collapse;
-    text-align:left;
-    font-size:14px;
+.product-details {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  flex: 1;
 }
 
-.specs-table th, .specs-table td{
-    padding:14px 20px;
-    border-bottom:1px solid #e5ddd2;
+.product-details h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
 }
 
-.specs-table th{
-    width:35%;
-    background:#faf7f1;
-    color:#173d35;
-    font-weight:600;
+.product-details p {
+  font-size: 13px;
+  color: var(--muted);
 }
 
-.specs-table tr:last-child td, .specs-table tr:last-child th{
-    border-bottom:none;
+.product-details .btn {
+  width: 100%;
+  margin-top: auto;
 }
 
-/* WHOLESALE BANNER */
-
-.wholesale-banner{
-    background:#a36d3f;
-    color:white;
-    border-radius:14px;
-    padding:30px;
-    margin-top:40px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    flex-wrap:wrap;
-    gap:20px;
+.tag {
+  display: inline-block;
+  background: #f4eadc;
+  color: var(--gold);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 5px 9px;
+  border-radius: 30px;
+  margin-bottom: 10px;
 }
 
-.wholesale-banner h3{
-    color:white;
-    font-size:24px;
+.specs {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 13px;
+  overflow: hidden;
+  margin-top: 25px;
 }
 
-.wholesale-banner p{
-    font-size:14px;
-    color:#fdf8f4;
-    max-width:600px;
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 14px;
 }
 
-/* CONTACT */
-
-.contact{
-    background:#173d35;
-    color:white;
-    border-radius:18px;
-    padding:40px;
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:35px;
+th, td {
+  padding: 15px 20px;
+  border-bottom: 1px solid var(--line);
 }
 
-.contact h2{
-    color:white;
+th {
+  width: 34%;
+  background: var(--cream);
+  color: var(--green);
+  font-weight: 700;
 }
 
-.contact p{
-    color:#d7e4df;
-    margin-top:12px;
+tr:last-child th,
+tr:last-child td {
+  border-bottom: 0;
 }
 
-.contact-info{
-    display:grid;
-    gap:12px;
+.wholesale {
+  background: var(--gold);
+  color: var(--white);
+  border-radius: 14px;
+  padding: 28px 30px;
+  margin-top: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
-.contact-item{
-    background:#ffffff12;
-    padding:14px;
-    border-radius:8px;
+.wholesale h3 {
+  font-size: 24px;
+  color: var(--white);
+  margin-bottom: 6px;
 }
 
-.contact-item small{
-    display:block;
-    color:#b9ccc6;
-    font-size:10px;
-    letter-spacing:1px;
-    margin-bottom:3px;
+.wholesale p {
+  font-size: 13px;
+  color: #fff8f0;
+  max-width: 650px;
 }
 
-.map-container{
-    margin-top:20px;
-    border-radius:12px;
-    overflow:hidden;
-    box-shadow:0 8px 20px rgba(0,0,0,0.15);
-    border:1px solid #ffffff22;
+.contact {
+  background: var(--green);
+  color: var(--white);
+  border-radius: 17px;
+  padding: 36px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 34px;
 }
 
-.map-container iframe{
-    width:100%;
-    height:230px;
-    border:0;
-    display:block;
+.contact h2 {
+  color: var(--white);
 }
 
-footer{
-    text-align:center;
-    padding:25px;
-    font-size:13px;
-    color:#777;
-    border-top:1px solid #e3dbd1;
+.contact-intro {
+  color: #d7e4df;
+  margin-top: 12px;
 }
 
-/* RESPONSIVE */
-
-@media(max-width:900px){
-    .cards{
-        grid-template-columns:repeat(2,1fr);
-    }
-    .product-grid{
-        grid-template-columns:1fr;
-    }
+.map {
+  margin-top: 22px;
+  border-radius: 11px;
+  overflow: hidden;
+  border: 1px solid #ffffff25;
 }
 
-@media(max-width:800px){
-    .hero{
-        grid-template-columns:1fr;
-        padding-top:40px;
-    }
-
-    .hero-img{
-        order:-1;
-    }
-
-    .hero-img img{
-        max-height:320px;
-    }
-
-    .contact{
-        grid-template-columns:1fr;
-        padding:28px 20px;
-    }
+.map iframe {
+  width: 100%;
+  height: 235px;
+  border: 0;
+  display: block;
 }
 
-@media(max-width:550px){
-    .nav{
-        align-items:flex-start;
-    }
+.contact-info {
+  display: grid;
+  align-content: start;
+  gap: 12px;
+}
 
-    nav{
-        gap:12px;
-        flex-wrap:wrap;
-        justify-content:flex-end;
-    }
+.contact-item {
+  display: block;
+  background: #ffffff12;
+  padding: 15px;
+  border-radius: 8px;
+  color: var(--white);
+  overflow-wrap: anywhere;
+}
 
-    .cards{
-        grid-template-columns:1fr;
-    }
+.contact-item:hover {
+  background: #ffffff1c;
+}
 
-    .section{
-        padding:45px 17px;
-    }
+.contact-item small {
+  display: block;
+  color: #b9ccc6;
+  font-size: 10px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.contact-item span {
+  font-size: 14px;
+}
+
+footer {
+  text-align: center;
+  padding: 24px 20px;
+  font-size: 12px;
+  color: #777;
+  border-top: 1px solid var(--line);
+}
+
+footer strong {
+  color: var(--green);
+}
+
+@media (max-width: 850px) {
+  .hero {
+    gap: 28px;
+  }
+
+  .hero-image img {
+    height: 360px;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .product-card:last-child {
+    grid-column: 1 / -1;
+  }
+
+  .product-card:last-child img {
+    height: 330px;
+  }
+
+  .contact {
+    padding: 28px;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 650px) {
+  .container {
+    width: calc(100% - 30px);
+  }
+
+  .nav {
+    padding: 15px 0;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  nav {
+    gap: 10px 17px;
+  }
+
+  nav a {
+    font-size: 12px;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 30px 0 45px;
+    gap: 25px;
+  }
+
+  .hero-image {
+    order: -1;
+  }
+
+  .hero-image img {
+    height: auto;
+    max-height: 390px;
+    object-fit: cover;
+  }
+
+  .section {
+    padding: 48px 0;
+  }
+
+  .cards,
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .product-card:last-child {
+    grid-column: auto;
+  }
+
+  .product-card img,
+  .product-card:last-child img {
+    height: auto;
+    max-height: 390px;
+    aspect-ratio: 4 / 3;
+  }
+
+  .wholesale {
+    padding: 23px;
+  }
+
+  .contact {
+    padding: 24px 18px;
+  }
+
+  th, td {
+    padding: 12px;
+    font-size: 12px;
+  }
 }
 </style>
 </head>
 
 <body>
 
-<!-- HEADER -->
 <header>
-    <div class="nav">
-        <a href="#home" class="logo">
-            BR. Kurapati
-            <span>SOLAPUR CHADDARS</span>
-        </a>
+  <div class="container nav">
+    <a href="#home" class="logo">
+      BR. Kurapati
+      <span>SOLAPUR CHADDARS</span>
+    </a>
 
-        <nav>
-            <a href="#collection">Collection</a>
-            <a href="#specs">Specifications</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </div>
+    <nav aria-label="Main navigation">
+      <a href="#collection">Collection</a>
+      <a href="#specs">Specifications</a>
+      <a href="#about">Our Craft</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
 </header>
 
-<!-- HERO -->
-<section id="home">
-<div class="hero">
-    <div>
-        <div class="small-title">ESTABLISHED 1995 · SOLAPUR, MAHARASHTRA</div>
+<main>
 
-        <h1>Pure Cotton Solapur Chaddars.</h1>
+  <!-- FIRST IMAGE: WEBSITE HERO -->
+  <section id="home" class="container hero">
+    <div class="hero-copy">
+      <div class="eyebrow">Established 1995 · Solapur, Maharashtra</div>
 
-        <p>
-            We are <b>BR. Kurapati</b>, manufacturers of classic Solapur Chaddars. We specialize in traditional designs, comfortable cotton, and durable weaves.
-        </p>
+      <h1>Pure Cotton Solapur Chaddars.</h1>
 
-        <div class="buttons">
-            <a href="https://wa.me/919890553597?text=Hi%20BR%20Kurapati,%20I%20want%20to%20inquire%20about%20ordering%20Solapur%20Chaddars." target="_blank" class="btn btn-whatsapp">
-                Order via WhatsApp
-            </a>
-            <a href="#collection" class="btn btn-light">
-                Browse Patterns
-            </a>
-        </div>
-    </div>
+      <p>
+        Welcome to <strong>BR. Kurapati</strong>, manufacturers of famous
+        Solapur Chaddars since 1995. Explore traditional Mayur Pankh
+        designs, distinctive patterns and timeless textile craftsmanship.
+      </p>
 
-    <div class="hero-img">
-        <img src="https://user26405.na.imgto.link/public/20260823/1000052466-1.avif" alt="Mayur Pankh Solapur Chaddar">
-    </div>
-</div>
-</section>
-
-<!-- ABOUT / VALUE PROPS -->
-<section id="about" class="soft">
-<div class="section">
-    <div class="section-title">
-        <div class="small-title">ABOUT OUR CRAFT</div>
-        <h2>Built on heritage, woven for everyday comfort.</h2>
-        <p>Decades of textile manufacturing experience from New Pacha Peth, Solapur.</p>
-    </div>
-
-    <div class="cards">
-        <div class="card">
-            <h3>Pure Cotton</h3>
-            <p>Breathable cotton yarn offering all-season comfort and long-lasting fabric strength.</p>
-        </div>
-        <div class="card">
-            <h3>Solapur Heritage</h3>
-            <p>Traditional woven patterns and classic colour combinations refined over decades.</p>
-        </div>
-        <div class="card">
-            <h3>Wholesale & Retail</h3>
-            <p>Single unit home supply and bulk orders for weddings, gifting, or retail shops.</p>
-        </div>
-    </div>
-</div>
-</section>
-
-<!-- PRODUCT CATALOG -->
-<section id="collection">
-<div class="section">
-    <div class="section-title">
-        <div class="small-title">OUR CATALOG</div>
-        <h2>Popular designs & weaves.</h2>
-        <p>Choose your preferred design to inquire directly via WhatsApp.</p>
-    </div>
-
-    <div class="product-grid">
-        <!-- PRODUCT 1 -->
-        <div class="product-card">
-            <img src="https://user26405.na.imgto.link/public/20260823/1000052445.avif" alt="Classic Mayur Pankh Peacock Solapur Chaddar">
-            <div class="product-details">
-                <div>
-                    <h3>Classic Mayur Pankh</h3>
-                    <p>Signature Solapur peacock motif woven with classic rich tones and a durable weave structure.</p>
-                </div>
-                <a href="https://wa.me/919890553597?text=Hi,%20I%20am%20interested%20in%20ordering%20the%20*Classic%20Mayur%20Pankh*%20Solapur%20Chaddar." target="_blank" class="btn btn-whatsapp" style="width:100%;">
-                    Order This Design
-                </a>
-            </div>
-        </div>
-
-        <!-- PRODUCT 2 -->
-        <div class="product-card">
-            <img src="https://user26405.na.imgto.link/public/20260823/1000052444-1.avif" alt="Geometric Jacquard Chaddar">
-            <div class="product-details">
-                <div>
-                    <h3>Geometric Jacquard Duo</h3>
-                    <p>Balanced repeating geometric borders paired with traditional center motifs.</p>
-                </div>
-                <a href="https://wa.me/919890553597?text=Hi,%20I%20am%20interested%20in%20ordering%20the%20*Geometric%20Jacquard*%20Solapur%20Chaddar." target="_blank" class="btn btn-whatsapp" style="width:100%;">
-                    Order This Design
-                </a>
-            </div>
-        </div>
-
-        <!-- PRODUCT 3 -->
-        <div class="product-card">
-            <img src="https://user26405.na.imgto.link/public/20260823/1000052446.avif" alt="Multi-Tone Heritage Solapur Chaddar">
-            <div class="product-details">
-                <div>
-                    <h3>Heritage Multi-Tone</h3>
-                    <p>Vibrant warp and weft color styling suitable for daily use and family gifting.</p>
-                </div>
-                <a href="https://wa.me/919890553597?text=Hi,%20I%20am%20interested%20in%20ordering%20the%20*Heritage%20Multi-Tone*%20Solapur%20Chaddar." target="_blank" class="btn btn-whatsapp" style="width:100%;">
-                    Order This Design
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <!-- WHOLESALE CALLOUT -->
-    <div class="wholesale-banner">
-        <div>
-            <h3>Bulk Gifting & Wholesale Supply</h3>
-            <p>Direct supply for wedding gifting, corporate requirements, and retail distribution across India.</p>
-        </div>
-        <a href="https://wa.me/919890553597?text=Hi,%20I%20want%20to%20inquire%20about%20*Wholesale%20/%20Bulk%20Gifting*%20prices." target="_blank" class="btn btn-light" style="color:#a36d3f; border:none;">
-            Wholesale Inquiry
+      <div class="buttons">
+        <a class="btn btn-whatsapp"
+           href="https://wa.me/919890553597?text=Hello%20BR.%20Kurapati%2C%20I%20want%20to%20enquire%20about%20Solapur%20Chaddars."
+           target="_blank" rel="noopener">
+          Order via WhatsApp
         </a>
-    </div>
-</div>
-</section>
 
-<!-- SPECIFICATIONS TABLE -->
-<section id="specs" class="soft">
-<div class="section">
-    <div class="section-title">
-        <div class="small-title">PRODUCT SPECIFICATIONS</div>
-        <h2>Standard sizes & weave details.</h2>
-        <p>Dimensions and care guidelines for our cotton chaddars.</p>
+        <a class="btn btn-light" href="#collection">
+          Browse Collection
+        </a>
+      </div>
     </div>
 
-    <div class="specs-container">
-        <table class="specs-table">
-            <tbody>
-                <tr>
-                    <th>Fabric Material</th>
-                    <td>Pure Cotton Yarn</td>
-                </tr>
-                <tr>
-                    <th>Weave Construction</th>
-                    <td>Traditional Jacquard Weave</td>
-                </tr>
-                <tr>
-                    <th>Available Sizes</th>
-                    <td>Single Bed: 60" x 90" (approx) | Double Bed: 90" x 100" (approx)</td>
-                </tr>
-                <tr>
-                    <th>Washing & Care</th>
-                    <td>Machine wash cold; colorfast yarn; line dry</td>
-                </tr>
-            </tbody>
-        </table>
+    <div class="hero-image">
+      <img
+        src="images/1000067721.jpg"
+        alt="BR. Kurapati Solapur Chaddar"
+        fetchpriority="high">
     </div>
-</div>
-</section>
+  </section>
 
-<!-- CONTACT & LOCATION -->
-<section id="contact">
-<div class="section">
-    <div class="contact">
-        <div>
-            <div class="small-title" style="color:#d9ad7c;">GET IN TOUCH</div>
-            <h2>Bring Solapur tradition home.</h2>
-            <p>For custom inquiries, single-piece orders, and wholesale shipments, reach our team directly.</p>
+  <!-- OUR CRAFT -->
+  <section id="about" class="soft">
+    <div class="container section">
+      <div class="section-heading">
+        <div class="eyebrow">Our Heritage</div>
+        <h2>Tradition woven into every design.</h2>
+        <p>
+          Discover the heritage of Solapur textiles through traditional
+          designs and decorative patterns from Maharashtra.
+        </p>
+      </div>
 
-            <div class="map-container">
-                <iframe 
-                    title="BR Kurapati Location Map"
-                    src="https://maps.google.com/maps?q=Masan%20Kirana,%20New%20Pacha%20Peth,%20Solapur,%20Maharashtra&t=&z=17&ie=UTF8&iwloc=A&output=embed" 
-                    loading="lazy" 
-                    allowfullscreen>
-                </iframe>
+      <div class="cards">
+        <article class="info-card">
+          <h3>Traditional Designs</h3>
+          <p>
+            Explore classic Mayur Pankh motifs, decorative borders
+            and distinctive traditional patterns.
+          </p>
+        </article>
+
+        <article class="info-card">
+          <h3>Solapur Heritage</h3>
+          <p>
+            Proudly presenting the familiar textile tradition
+            associated with Solapur, Maharashtra.
+          </p>
+        </article>
+
+        <article class="info-card">
+          <h3>Retail & Bulk Orders</h3>
+          <p>
+            Contact us for availability, pricing, gifting requirements
+            and wholesale enquiries.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- COLLECTION -->
+  <section id="collection">
+    <div class="container section">
+      <div class="section-heading">
+        <div class="eyebrow">Our Collection</div>
+        <h2>Explore our chaddar designs.</h2>
+        <p>
+          View our featured designs and contact us to confirm current
+          availability, sizes and prices.
+        </p>
+      </div>
+
+      <div class="product-grid">
+
+        <!-- SECOND IMAGE -->
+        <article class="product-card">
+          <img
+            src="images/1000067722.jpg"
+            alt="Traditional Solapur chaddar design"
+            loading="lazy">
+
+          <div class="product-details">
+            <div>
+              <span class="tag">FEATURED DESIGN</span>
+              <h3>Traditional Pattern</h3>
+              <p>
+                A distinctive traditional pattern with rich colours
+                and a decorative textile design.
+              </p>
             </div>
+
+            <a class="btn btn-whatsapp"
+               href="https://wa.me/919890553597?text=Hello%2C%20I%20am%20interested%20in%20the%20traditional%20Solapur%20Chaddar."
+               target="_blank" rel="noopener">
+              Enquire on WhatsApp
+            </a>
+          </div>
+        </article>
+
+        <!-- THIRD IMAGE -->
+        <article class="product-card">
+          <img
+            src="images/1000067723.jpg"
+            alt="Mayur Pankh Solapur chaddar design"
+            loading="lazy">
+
+          <div class="product-details">
+            <div>
+              <span class="tag">MAYUR PANKH</span>
+              <h3>Mayur Pankh Design</h3>
+              <p>
+                A traditional peacock-inspired design with
+                decorative borders.
+              </p>
+            </div>
+
+            <a class="btn btn-whatsapp"
+               href="https://wa.me/919890553597?text=Hello%2C%20I%20am%20interested%20in%20the%20Mayur%20Pankh%20Chaddar."
+               target="_blank" rel="noopener">
+              Enquire on WhatsApp
+            </a>
+          </div>
+        </article>
+
+        <!-- FIRST IMAGE USED AGAIN -->
+        <article class="product-card">
+          <img
+            src="images/1000067721.jpg"
+            alt="Classic Solapur chaddar"
+            loading="lazy">
+
+          <div class="product-details">
+            <div>
+              <span class="tag">CLASSIC COLLECTION</span>
+              <h3>Classic Solapur Chaddar</h3>
+              <p>
+                A classic choice for home use and traditional gifting.
+                Contact us for available designs.
+              </p>
+            </div>
+
+            <a class="btn btn-whatsapp"
+               href="https://wa.me/919890553597?text=Hello%2C%20please%20share%20the%20available%20classic%20Solapur%20Chaddar%20designs."
+               target="_blank" rel="noopener">
+              Enquire on WhatsApp
+            </a>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="wholesale">
+        <div>
+          <h3>Bulk Orders & Wholesale</h3>
+          <p>
+            Looking for multiple chaddars or retail supply?
+            Contact us to discuss your requirements.
+          </p>
+        </div>
+
+        <a class="btn btn-light"
+           href="https://wa.me/919890553597?text=Hello%20BR.%20Kurapati%2C%20please%20share%20details%20about%20bulk%20orders%20and%20wholesale."
+           target="_blank" rel="noopener">
+          Wholesale Enquiry
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCT INFORMATION -->
+  <section id="specs" class="soft">
+    <div class="container section">
+      <div class="section-heading">
+        <div class="eyebrow">Product Information</div>
+        <h2>Product details.</h2>
+        <p>
+          Contact us to confirm the exact product specifications
+          before placing your order.
+        </p>
+      </div>
+
+      <div class="specs">
+        <table>
+          <tbody>
+            <tr>
+              <th scope="row">Product</th>
+              <td>Solapur Chaddars</td>
+            </tr>
+            <tr>
+              <th scope="row">Designs</th>
+              <td>Mayur Pankh and traditional patterns</td>
+            </tr>
+            <tr>
+              <th scope="row">Fabric</th>
+              <td>Please confirm fabric details with the seller</td>
+            </tr>
+            <tr>
+              <th scope="row">Sizes</th>
+              <td>Ask us about available sizes</td>
+            </tr>
+            <tr>
+              <th scope="row">Pricing</th>
+              <td>Contact us for current prices</td>
+            </tr>
+            <tr>
+              <th scope="row">Bulk Orders</th>
+              <td>Contact us for availability and order details</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container section">
+      <div class="contact">
+        <div>
+          <div class="eyebrow" style="color:#d9ad7c">
+            Get in Touch
+          </div>
+
+          <h2>Bring Solapur tradition home.</h2>
+
+          <p class="contact-intro">
+            Contact BR. Kurapati for product availability, pricing,
+            orders and wholesale enquiries.
+          </p>
+
+          <div class="map">
+            <iframe
+              title="Location of New Pacha Peth, Solapur"
+              src="https://maps.google.com/maps?q=New%20Pacha%20Peth%2C%20Solapur%2C%20Maharashtra&t=&z=14&ie=UTF8&iwloc=&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen>
+            </iframe>
+          </div>
         </div>
 
         <div class="contact-info">
-            <a href="https://wa.me/919890553597?text=Hi%20BR%20Kurapati,%20I%20have%20an%20order%20inquiry." target="_blank" class="contact-item">
-                <small>DIRECT WHATSAPP</small>
-                +91 9890553597
-            </a>
+          <a class="contact-item"
+             href="https://wa.me/919890553597"
+             target="_blank" rel="noopener">
+            <small>WHATSAPP</small>
+            <span>+91 98905 53597</span>
+          </a>
 
-            <a href="tel:9890556524" class="contact-item">
-                <small>DIRECT CALL</small>
-                +91 9890556524
-            </a>
+          <a class="contact-item" href="tel:+919890556524">
+            <small>PHONE</small>
+            <span>+91 98905 56524</span>
+          </a>
 
-            <a href="mailto:sagar.kurapati5@gmail.com" class="contact-item">
-                <small>EMAIL</small>
-                sagar.kurapati5@gmail.com
-            </a>
+          <a class="contact-item"
+             href="mailto:sagar.kurapati5@gmail.com">
+            <small>EMAIL</small>
+            <span>sagar.kurapati5@gmail.com</span>
+          </a>
 
-            <a href="https://maps.google.com/?q=Masan+Kirana,+New+Pacha+Peth,+Solapur,+Maharashtra" target="_blank" class="contact-item">
-                <small>WORKSHOP & DISPATCH ADDRESS</small>
-                New Pacha Peth, Solapur, Maharashtra - 413006
-            </a>
+          <a class="contact-item"
+             href="https://maps.google.com/?q=New+Pacha+Peth,+Solapur,+Maharashtra"
+             target="_blank" rel="noopener">
+            <small>LOCATION</small>
+            <span>New Pacha Peth, Solapur, Maharashtra – 413006</span>
+          </a>
         </div>
+      </div>
     </div>
-</div>
-</section>
+  </section>
+
+</main>
 
 <footer>
-    © 2026 BR. Kurapati · Pure Cotton Solapur Chaddars · Solapur, Maharashtra
-</fotter>
-
-<footer>
-By:venkateshchilveri.99@gmail.com
+  <p>
+    © 2026 <strong>BR. Kurapati</strong> · Solapur Chaddars · Maharashtra
+  </p>
+  <p>
+    Website by Venkatesh Chilveri · venkateshchilveri.99@gmail.com
+  </p>
 </footer>
 
 </body>
