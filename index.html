@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -407,50 +405,38 @@ tr:last-child td {
   font-size: 14px;
 }
 
-/* Professional address highlight */
-.address-card {
+/* Separate heading box */
+.qr-heading-box {
+  margin-top: 22px;
+  padding: 14px 18px;
   background: #f8f1e7;
+  border: 1px solid var(--line);
   border-left: 4px solid var(--gold);
   border-radius: 8px;
-  padding: 16px 18px;
-  margin-top: 18px;
-  margin-bottom: 20px;
-  box-shadow: 0 4px 14px #0000000a;
+  text-align: center;
 }
 
-.address-label {
-  color: var(--gold);
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  margin-bottom: 6px;
-}
-
-.address-main {
+.qr-heading-box h3 {
   color: var(--green);
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.6;
+  font-size: 20px;
+  margin: 0;
 }
 
-.address-sub {
-  color: var(--muted);
-  font-size: 13px;
-  margin-top: 3px;
-}
-
-.map {
-  margin-top: 22px;
+/* Separate QR code box */
+.qr-code-box {
+  margin-top: 12px;
+  padding: 20px;
+  background: var(--white);
+  border: 1px solid var(--line);
   border-radius: 10px;
-  overflow: hidden;
+  text-align: center;
 }
 
-.map iframe {
-  width: 100%;
-  height: 235px;
-  border: 0;
-  display: block;
+.address-qr {
+  width: 220px;
+  height: 220px;
+  object-fit: contain;
+  margin: 0 auto;
 }
 
 footer {
@@ -577,7 +563,7 @@ footer strong {
 
 <main>
 
-  <!-- HERO: FIRST IMAGE -->
+  <!-- HERO -->
   <section id="home" class="container hero">
     <div class="hero-copy">
       <div class="eyebrow">Established 1995 · Solapur, Maharashtra</div>
@@ -604,10 +590,9 @@ footer strong {
     </div>
 
     <div class="hero-image">
-      <img
-        src="./1000067721.jpg"
-        alt="BR. Kurapati Solapur Chaddar"
-        fetchpriority="high">
+      <img src="./1000067721.jpg"
+           alt="BR. Kurapati Solapur Chaddar"
+           fetchpriority="high">
     </div>
   </section>
 
@@ -641,7 +626,7 @@ footer strong {
         </article>
 
         <article class="info-card">
-          <h3>Retail & Bulk Orders</h3>
+          <h3>Retail &amp; Bulk Orders</h3>
           <p>
             Contact us for availability, pricing, gifting requirements
             and wholesale enquiries.
@@ -666,10 +651,9 @@ footer strong {
       <div class="product-grid">
 
         <article class="product-card">
-          <img
-            src="./1000067722.jpg"
-            alt="Traditional Solapur chaddar design"
-            loading="lazy">
+          <img src="./1000067722.jpg"
+               alt="Traditional Solapur chaddar design"
+               loading="lazy">
 
           <div class="product-details">
             <div>
@@ -690,10 +674,9 @@ footer strong {
         </article>
 
         <article class="product-card">
-          <img
-            src="./1000067723.jpg"
-            alt="Mayur Pankh Solapur chaddar design"
-            loading="lazy">
+          <img src="./1000067723.jpg"
+               alt="Mayur Pankh Solapur chaddar design"
+               loading="lazy">
 
           <div class="product-details">
             <div>
@@ -714,10 +697,9 @@ footer strong {
         </article>
 
         <article class="product-card">
-          <img
-            src="./1000067721.jpg"
-            alt="Classic Solapur chaddar"
-            loading="lazy">
+          <img src="./1000067721.jpg"
+               alt="Classic Solapur chaddar"
+               loading="lazy">
 
           <div class="product-details">
             <div>
@@ -741,7 +723,7 @@ footer strong {
 
       <div class="wholesale">
         <div>
-          <h3>Bulk Orders & Wholesale</h3>
+          <h3>Bulk Orders &amp; Wholesale</h3>
           <p>
             Looking for multiple chaddars or retail supply?
             Contact us to discuss your requirements.
@@ -806,6 +788,7 @@ footer strong {
   <section id="contact">
     <div class="container section">
       <div class="contact">
+
         <div>
           <div class="eyebrow" style="color:#d9ad7c">Get in Touch</div>
           <h2>Bring Solapur tradition home.</h2>
@@ -815,25 +798,17 @@ footer strong {
             orders and wholesale enquiries.
           </p>
 
-          <!-- PROFESSIONAL HIGHLIGHTED ADDRESS -->
-          <div class="address-card">
-            <div class="address-label">Our Location</div>
-            <div class="address-main">
-              House 931, New Pacha Peth
-            </div>
-            <div class="address-sub">
-              Solapur, Maharashtra – 413006, India
-            </div>
+          <!-- HEADING IN A SEPARATE BOX -->
+          <div class="qr-heading-box">
+            <h3>Scan to get address</h3>
           </div>
 
-          <div class="map">
-            <iframe
-              title="House 931, New Pacha Peth, Solapur location"
-              src="https://maps.google.com/maps?q=House%20931%2C%20New%20Pacha%20Peth%2C%20Solapur%2C%20Maharashtra&t=&z=14&ie=UTF8&iwloc=&output=embed"
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-              allowfullscreen>
-            </iframe>
+          <!-- QR CODE IN A SEPARATE BOX -->
+          <div class="qr-code-box">
+            <img
+              src="./1000068166.png"
+              alt="Address QR Code"
+              class="address-qr">
           </div>
         </div>
 
@@ -860,9 +835,13 @@ footer strong {
              href="https://maps.google.com/?q=House+931,+New+Pacha+Peth,+Solapur,+Maharashtra"
              target="_blank" rel="noopener">
             <small>LOCATION</small>
-            <span>House 931, New Pacha Peth, Solapur, Maharashtra – 413006</span>
+            <span>
+              House 931, New Pacha Peth, Solapur,
+              Maharashtra – 413006
+            </span>
           </a>
         </div>
+
       </div>
     </div>
   </section>
@@ -871,7 +850,7 @@ footer strong {
 
 <footer>
   <p>© 2026 <strong>BR. Kurapati</strong> · Solapur Chaddars · Maharashtra</p>
-  <p>Website by Venkatesh Chilveri · venkateshchilveri.99@gmail.com</p>
+  <p>Website by Venkatesh Chilveri · venkatesh.chilveri@gmail.com</p>
 </footer>
 
 </body>
